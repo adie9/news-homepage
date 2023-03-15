@@ -56,18 +56,31 @@ p {
 
 .container {
     display: grid;
-    
+    grid-template-columns: auto auto auto auto;
+    row-gap: 30px;
+    grid-template-areas:
+    'main-img main-img main-img main-img'
+    'main-heading main-heading main-heading main-heading'
+    'main-desc main-desc main-desc main-desc'
+    'new new new new'
+    'one one one one'
+    'two two two two'
+    'three three three three'
+    ;
 }
 
 .main-img {
-    
+    grid-area: main-img;
+    width: 355px;
+    padding-top: 30px;
 }
 
 .main-heading {
-    
+    grid-area: main-heading;
 }
 
 .main-description {
+    grid-area: main-desc;
     line-height: 20pt;
     color: var(--dark-grayish-blue);
 }
@@ -81,6 +94,7 @@ button {
 }
 
 .new-section {
+    grid-area: new;
     background-color: var(--very-dark-blue);
     color: var(--off-white);
     padding: 20px 20px 5px 20px;
@@ -101,14 +115,17 @@ button {
 }
 
 .one {
+    grid-area: one;
     gap: 20px;
 }
 
 .two {
+    grid-area: two;
     gap: 20px;
 }
 
 .three {
+    grid-area: three;
     gap: 20px;
 }
 
