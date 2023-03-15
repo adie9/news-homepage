@@ -25,6 +25,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    margin: 10px
 }
 
 header {
@@ -67,7 +68,8 @@ p {
 }
 
 .main-description {
-    
+    line-height: 20pt;
+    color: ;
 }
 
 button {
@@ -81,7 +83,7 @@ button {
 .new-section {
     background-color: var(--very-dark-blue);
     color: var(--off-white);
-    padding: 20px;
+    padding: 20px 20px 5px 20px;
 }
 
 .new-section h2 {
@@ -98,7 +100,30 @@ button {
     padding-bottom: 30px;
 }
 
+.one {
+    gap: 20px;
+}
 
+.two {
+    gap: 20px;
+}
+
+.three {
+    gap: 20px;
+}
+
+.num-images {
+    width: 100px;
+    height: 100px;
+}
+
+.sub-description {
+    justify-content: space-evenly;
+}
+
+.sub-description > p, h2 {
+    color: var(--grayish-blue);
+}
 
 .attribution { 
     font-size: 11px; text-align: center; 
