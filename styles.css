@@ -13,6 +13,16 @@
     padding: 0;
 }
 
+.flex-rw {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -45,7 +55,50 @@ p {
 
 .container {
     display: grid;
+    
 }
+
+.main-img {
+    
+}
+
+.main-heading {
+    
+}
+
+.main-description {
+    
+}
+
+button {
+    background-color: var(--soft-red);
+    color: var(--off-white);
+    width: 150px;
+    height: 40px;
+    letter-spacing: 3px;
+}
+
+.new-section {
+    background-color: var(--very-dark-blue);
+    color: var(--off-white);
+    padding: 20px;
+}
+
+.new-section h2 {
+    color: var(--soft-orange);
+    
+}
+
+.new-section h3 {
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.new-section p {
+    padding-bottom: 30px;
+}
+
+
 
 .attribution { 
     font-size: 11px; text-align: center; 
