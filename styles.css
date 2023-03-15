@@ -69,7 +69,7 @@ p {
 
 .main-description {
     line-height: 20pt;
-    color: ;
+    color: var(--dark-grayish-blue);
 }
 
 button {
