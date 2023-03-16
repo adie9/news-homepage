@@ -166,6 +166,23 @@ button {
     color: hsl(228, 45%, 44%); 
 }
 
+/* Pseudo classes */
+.nav-items li:hover {
+    color: var(--soft-red);
+}
+
+button:hover {
+    background-color: var(--very-dark-blue);
+}
+
+.new-section h3:hover {
+    color: var(--soft-orange);
+}
+
+.sub-description h3:hover {
+    color: var(--soft-red);
+}
+
 /* Desktop viewport */
 @media screen and (min-width: 1024px) {
     .container {
