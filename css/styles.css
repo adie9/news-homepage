@@ -23,9 +23,14 @@
     flex-direction: column;
 }
 
+html {
+    
+}
+
 body {
     font-family: 'Inter', sans-serif;
-    margin: 10px
+    margin: 10px;
+    
 }
 
 header {
@@ -43,10 +48,16 @@ nav {
 
 .nav-items {
     display: none;
+    list-style-type: none;
+    width: 400px;
 }
 
 #icon-menu {
     align-self: center;
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 p {
@@ -71,12 +82,14 @@ p {
 
 .main-img {
     grid-area: main-img;
-    width: 355px;
+    width: 100%;
     padding-top: 30px;
+    margin: 0 auto;
 }
 
 .main-heading {
     grid-area: main-heading;
+    font-weight: 800;
 }
 
 .main-description {
@@ -91,6 +104,8 @@ button {
     width: 150px;
     height: 40px;
     letter-spacing: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .new-section {
@@ -130,7 +145,7 @@ button {
 }
 
 .num-images {
-    width: 100px;
+    max-width: 100px;
     height: 100px;
 }
 
@@ -144,8 +159,68 @@ button {
 
 .attribution { 
     font-size: 11px; text-align: center; 
+    padding-top: 20px;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/* Desktop viewport */
+@media screen and (min-width: 1024px) {
+    .container {
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: 
+        'main-img main-img new'
+        'main-img main-img new'
+        'main-heading main-desc new'
+        'main-heading main-desc new'
+        'one two three';
+        column-gap: 20px;
+    }
+
+    body {
+        margin: 100px;
+    }
+
+    header {
+        padding-bottom: 60px;
+    }
+
+    #icon-menu {
+        display: none;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sub-description {
+        justify-content: space-between;
+    }
+
+    .sub-description > h3 {
+        font-size: 1rem;
+    }
+
+    .sub-description > p {
+        font-size: 1rem;
+        
+    }
+
+    .num-images {
+        align-self: center;
+        height: fit-content;
+    }
+
+    .main-img {
+        padding-top: 0;
+        max-height: 300px;
+        max-width: 800px;
+    }
+
+    
 }
