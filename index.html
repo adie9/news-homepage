@@ -14,19 +14,42 @@
 
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
 
+
+<body>
   <header>
     <img id="logo" src="assets/images/logo.svg" alt="logo">
     <nav>
-      <img id="icon-menu" src="assets/images/icon-menu.svg" alt="icon-menu">
-      <ul class="nav-items">
-        <li>Home</li>
-        <li>New</li>
-        <li>Popular</li>
-        <li>Trending</li>
-        <li>Categories</li>
-      </ul>
+
+      <!-- Mobile Nav -->
+      <div class="mobile-nav">
+        <img id="icon-menu" src="assets/images/icon-menu.svg" alt="icon-menu">
+        <div class="menu-popup">
+          <img id="close-icon" src="assets/images/icon-menu-close.svg" alt="close">
+          <ul class="mobile-nav-items">
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </div>
+      </div>
+      
+
+      
+
+      <!-- Desktop nav -->
+      <div class="desktop-nav">
+        <ul class="desktop-nav-items">
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </div>
+
     </nav>
   </header>
 
